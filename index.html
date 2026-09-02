@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JGH Lawncare | Jesus' Grass Heaven</title>
+
+<style>
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  color: #243024;
+
+  background: #f5f0e3;
+
+  line-height: 1.6;
+
+}
+
+header {
+
+  background: #faf7ef;
+
+  padding: 18px 6%;
+
+  position: sticky;
+
+  top: 0;
+
+  border-bottom: 3px solid #cbb98d;
+
+}
+
+nav {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+.logo {
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  color: #294b32;
+
+}
+
+.logo span { color: #674b32; }
+
+nav a {
+
+  color: #294b32;
+
+  text-decoration: none;
+
+  margin-left: 15px;
+
+  font-weight: bold;
+
+}
+
+.hero {
+
+  background: linear-gradient(120deg, #183322, #527248);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 100px 6%;
+
+}
+
+.hero h1 {
+
+  font-size: clamp(42px, 8vw, 76px);
+
+  margin-bottom: 10px;
+
+}
+
+.hero h1 span,
+
+.hero h2 { color: #efdca9; }
+
+.btn {
+
+  display: inline-block;
+
+  background: #d8c39a;
+
+  color: #243326;
+
+  padding: 14px 22px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  margin: 8px;
+
+  border-radius: 5px;
+
+}
+
+.verse {
+
+  background: #604631;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px 8%;
+
+  font-family: Georgia, serif;
+
+  font-style: italic;
+
+}
+
+.section {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 75px 5%;
+
+  text-align: center;
+
+}
+
+.cards {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-top: 30px;
+
+}
+
+.card {
+
+  background: white;
+
+  padding: 25px;
+
+  border-bottom: 5px solid #41693d;
+
+  box-shadow: 0 4px 12px #0002;
+
+}
+
+.about {
+
+  background: #e8dec6;
+
+  padding: 70px 8%;
+
+  text-align: center;
+
+}
+
+.area {
+
+  background: #294b32;
+
+  color: white;
+
+  padding: 70px 8%;
+
+  text-align: center;
+
+}
+
+.area h2 { color: #efdca9; }
+
+.gallery {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+
+}
+
+.photo {
+
+  background: #41693d;
+
+  color: #f5e7bd;
+
+  aspect-ratio: 4/3;
+
+  display: grid;
+
+  place-items: center;
+
+  font-weight: bold;
+
+}
+
+.contact {
+
+  display: grid;
+
+  grid-template-columns: 1.2fr .8fr;
+
+  gap: 30px;
+
+  text-align: left;
+
+}
+
+form {
+
+  background: white;
+
+  padding: 25px;
+
+}
+
+label {
+
+  display: block;
+
+  font-weight: bold;
+
+  margin: 12px 0;
+
+}
+
+input, select, textarea {
+
+  width: 100%;
+
+  padding: 11px;
+
+  margin-top: 5px;
+
+}
+
+.box {
+
+  background: #294b32;
+
+  color: white;
+
+  padding: 30px;
+
+}
+
+.phone {
+
+  color: #efdca9;
+
+  font-size: 22px;
+
+  font-weight: bold;
+
+}
+
+footer {
+
+  background: #1c2d21;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 25px;
+
+}
+
+@media (max-width: 750px) {
+
+  .cards { grid-template-columns: 1fr 1fr; }
+
+  .gallery { grid-template-columns: 1fr; }
+
+  .contact { grid-template-columns: 1fr; }
+
+  nav a { display: none; }
+
+}
+
+@media (max-width: 450px) {
+
+  .cards { grid-template-columns: 1fr; }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">JGH <span>Lawncare</span></div>
+
+<div>
+
+<a href="#services">Services</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<p>RELIABLE • LOCAL • HARDWORKING</p>
+
+<h1>Welcome to <span>JGH Lawncare</span></h1>
+
+<h2>Jesus' Grass Heaven</h2>
+
+<p>Helping your yard look its best with dependable, quality lawn care.</p>
+
+<a class="btn" href="#contact">Request a Service</a>
+
+<a class="btn" href="tel:8287298840">
+
+Call 828-729-8840
+
+</a>
+
+</section>
+
+<section class="verse">
+
+“The grass withereth, the flower fadeth:
+
+but the word of our God shall stand for ever.”
+
+<br><br>
+
+<b>Isaiah 40:8</b>
+
+</section>
+
+<section class="section" id="services">
+
+<h2>Our Lawn Care Services</h2>
+
+<p>
+
+Pricing is flexible and based on yard size,
+
+condition, and the work needed.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🌿 Lawn Mowing</h3>
+
+<p>Dependable mowing for yards of different sizes.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌱 Weed Eating</h3>
+
+<p>Trimming around edges and hard-to-reach areas.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🧹 Blowing & Cleanup</h3>
+
+<p>Cleaning grass and debris from hard surfaces.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🍃 Optional Weed Treatment</h3>
+
+<p>May be available depending on the job.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>Hard Work, Honest Service, and Faith</h2>
+
+<p>JGH stands for <b>Jesus' Grass Heaven</b>.</p>
+
+<p>
+
+Our goal is to provide dependable lawn care
+
+while treating every customer and property
+
+with respect.
+
+</p>
+
+</section>
+
+<section class="section" id="gallery">
+
+<h2>Work Gallery</h2>
+
+<p>Photos of completed jobs will be added here.</p>
+
+<div class="gallery">
+
+<div class="photo">Your Work Photo</div>
+
+<div class="photo">Before & After</div>
+
+<div class="photo">Your Work Photo</div>
+
+</div>
+
+</section>
+
+<section class="area">
+
+<h2>Proudly Serving the Hudson, NC Area</h2>
+
+<p>
+
+Serving customers within approximately
+
+a 30–40 minute drive of Hudson,
+
+North Carolina.
+
+</p>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Request a Lawn Care Service</h2>
+
+<p>Requests are reviewed before a time is confirmed.</p>
+
+<div class="contact">
+
+<form onsubmit="event.preventDefault(); alert('Thanks for your request! We will review your information before confirming a service time.');">
+
+<label>
+
+Name
+
+<input type="text" required>
+
+</label>
+
+<label>
+
+Phone Number
+
+<input type="tel" required>
+
+</label>
+
+<label>
+
+Address
+
+<input type="text"
+
+placeholder="Used to help check the service area"
+
+required>
+
+</label>
+
+<label>
+
+Service Needed
+
+<select required>
+
+<option value="">Choose a service</option>
+
+<option>Lawn Mowing</option>
+
+<option>Weed Eating</option>
+
+<option>Blowing & Cleanup</option>
+
+<option>Optional Weed Treatment</option>
+
+<option>Multiple Services</option>
+
+</select>
+
+</label>
+
+<label>
+
+Preferred Day / Time
+
+<input type="text">
+
+</label>
+
+<label>
+
+Tell Us About Your Yard
+
+<textarea rows="5"></textarea>
+
+</label>
+
+<button class="btn" type="submit">
+
+Send Service Request
+
+</button>
+
+</form>
+
+<div class="box">
+
+<h3>Contact JGH Lawncare</h3>
+
+<p>For questions or to request service:</p>
+
+<p class="phone">📞 828-729-8840</p>
+
+<p>
+
+<b>Service area:</b><br>
+
+Approximately 30–40 minutes around Hudson, NC.
+
+</p>
+
+<p>
+
+<b>Pricing:</b><br>
+
+Flexible based on the yard and work needed.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<b>JGH Lawncare</b>
+
+<br>
+
+Jesus' Grass Heaven
+
+<br>
+
+📞 828-729-8840
+
+</footer>
+
+</body>
+
+</html>
